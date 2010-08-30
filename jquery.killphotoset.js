@@ -2,7 +2,7 @@
 **  jQuery Kill Photoset v1.0 (for Tumblr themes)
 **  This gets rid of the flash slideshow Tumblr forces photo posts with multiple images to use.
 **  
-**  Copyright © 2010 Chris Kalani
+**  Copyright (c) 2010 Chris Kalani
 **  MIT License - http://www.opensource.org/licenses/mit-license.php
 **  Project URL: http://chriskalani.com/killphotoset
 **********************************************************************************************/
@@ -32,7 +32,7 @@
 				
 				$.each(pix, function(){
 					var img = this["photo-url-"+o.photoSize];
-					$this.append('<p><img src="'+img+'" /></p>');
+					$this.append('<p><img src="'+img+'" />'+this['caption']+'</p>');
 				});
 			
 			});
